@@ -3,7 +3,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className="text-red-600">
         First I'll make the header!
       </div>
     </>
