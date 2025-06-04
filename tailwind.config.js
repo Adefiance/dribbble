@@ -5,7 +5,14 @@ content: [
 "./src/**/*.{js,ts,jsx,tsx}",
 ],
 theme: {
-extend: {},
+extend: {
+    colors: {
+        navy: "rgb(13, 12, 33)",
+        gray: {
+            light: "rgb(242, 242, 245)"
+        }
+    }
+},
 },
 plugins: [],
 }
