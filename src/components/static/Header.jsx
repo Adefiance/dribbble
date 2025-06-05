@@ -13,8 +13,8 @@ function Header ({ scrolloff=true }) {
           </div>
         </div>
         <div className="w-[12.5%] h-full flex justify-between items-center">
-          <button className="bg-white text-black font-bold">Sign Up</button>
-          <button className="bg-navy text-white font-semibold px-5 py-3 rounded-[40px]">Log in</button>
+          <button className="bg-white text-black font-bold hover:text-gray-600 duration-150">Sign Up</button>
+          <button className="bg-dark-navy text-white font-semibold px-5 py-3 rounded-[40px] hover:bg-dark-gray duration-150">Log in</button>
         </div>
       </div>
     </div>
