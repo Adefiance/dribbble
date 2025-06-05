@@ -6,8 +6,8 @@ function Header ({ scrolloff=true }) {
     <div>
       <div className={`bg-white w-full h-[12vh] px-10 flex justify-between items-center`}>
         <img src={logo}/>
-        <div className="w-[70%] h-full bg-[red] flex">
-          {scrolloff == true ? <HeaderSearchBar /> : <div />}
+        <div className="w-[70%] h-full flex">
+          {scrolloff ? <HeaderSearchBar /> : <div />}
           <div className="w-[45%] h-full bg-[blue]">
             
           </div>
