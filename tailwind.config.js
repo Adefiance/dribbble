@@ -7,11 +7,12 @@ content: [
 theme: {
 extend: {
     colors: {
-        dark: {
-            navy: "rgb(13, 12, 33)",
+        gray: {
             light: "rgb(242, 242, 245)",
-            gray: "rgb(26, 24, 50)"
-        }
+            medium: "rgb(122, 112, 148)",
+            hard: "rgb(26, 24, 50)",
+        },
+        navy: "rgb(13, 12, 33)"
     }
 },
 },

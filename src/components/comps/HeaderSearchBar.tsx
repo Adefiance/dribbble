@@ -13,19 +13,19 @@ function HeaderSearchBar () {
         else return false
     }
     return (
-        <div className="w-[55%] h-full flex justify-center items-center">
+        <div className="w-[55%] h-full flex justify-center items-center bg-[red]">
             <div className="w-[80%] h-[80%] relative flex items-center">
-                <div className="absolute right-2 flex justify-end items-center h-full w-min-[40%]">
-                    <div className=" w-full flex justify-center items-center relative">
+                <div className="absolute right-2 flex justify-end items-center h-full min-w-[40%]">
+                    <div className=" w-full flex items-center relative">
                         {typing ? <RxCross2  className="text-gray-400 w-[15px] h-[15px] mx-3 cursor-pointer hover:text-black" onClick={() => {
                             if (search.current) {
                                 search.current.value = ""
                                 checkTyping(checkValue())
                             }}} /> : <div />}
-                        <button className="flex justify-center items-center cursor-pointer text-black  hover:text-gray-800 text-[12.5px]" onClick={dropdown}>
-                            <div className="font-semibold cursor-pointer">{chosen}</div>
+                        <button className="flex justify-center items-center cursor-pointer text-black  hover:text-gray-800 text-[12.5px] w-full" onClick={dropdown}>
+                            <div className="font-semibold cursor-pointer hover:text-gray-medium text-end">{chosen}</div>
                             {dropped ? <IoIosArrowDown className="mx-2 text-1xl cursor-pointer"  /> : <IoIosArrowUp className="mx-2 text-1xl"/>}
-                            {dropped ? <div className="absolute w-[125px] h-[150px] bg-white top-[3.5rem] ml-5 rounded-[5px] shadow-[#868686] shadow-md flex justify-between items-center flex-col p-2"> 
+                            {dropped ? <div className="absolute w-[125px] h-[150px] bg-white top-[3.5rem] ml-5 rounded-[5px] shadow-gray-light shadow-md flex justify-between items-center flex-col p-2"> 
                                 <div className={`duration-100 text-[15px] w-full h-[42px] flex items-center pl-3 font-${chosen=="Shots" ? "bold" : "medium"} rounded-[5px] border-[1px] border-white hover:bg-gray-50 hover:border-gray-100`} onClick={() => choose("Shots")}>Shots</div>
                                 <div className={`duration-100 text-[15px] w-full h-[42px] flex items-center pl-3 font-${chosen=="Designers" ? "bold" : "medium"} rounded-[5px] border-[1px] border-white hover:bg-gray-50 hover:border-gray-100`} onClick={() => choose("Designers")}>Designers</div>
                                 <div className={`duration-100 text-[15px] w-full h-[42px] flex items-center pl-3 font-${chosen=="Services" ? "bold" : "medium"} rounded-[5px] border-[1px] border-white hover:bg-gray-50 hover:border-gray-100`} onClick={() => choose("Services")}>Services</div>
